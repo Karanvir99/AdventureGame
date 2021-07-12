@@ -156,24 +156,21 @@ def start_game():                                                 # game restart
     event5 = input()
     while event5 not in ["k", "K"]:
         if event5 == "h":
-            print(
-                f"{Fore.YELLOW}Entering lowercase k could alert other guards. Entering uppercase K could result in "
-                f"a failed choke hold:\n", end="")
+            print(f"{Fore.YELLOW}Entering lowercase k could alert other guards. Entering uppercase K could result in "
+                  f"a failed choke hold:\n", end="")
             event5 = input()
         else:
             print(f"{Fore.RED}Please input one of the commands shown.\n", end="")
             event5 = input()
     else:
         if event5 == "K":
-            print(
-                "You manage to quietly choke hold the guard, however he breaks out and try to attack. Luckily your "
-                "assault rifle came in handy and you knock him out.")
+            print("You manage to quietly choke hold the guard, however he breaks out and try to attack. Luckily your "
+                  "assault rifle came in handy and you knock him out.")
             exp = exp + 5
             sleep(2.0)
         else:
-            print(
-                "You shoot the guard down, alerting the other guards. You were unable to kill them all as you were "
-                "outnumbered")
+            print("You shoot the guard down, alerting the other guards. You were unable to kill them all as you were "
+                  "outnumbered")
             sleep(2.0)
             print("GAME OVER YOU LOSE!")
             game_over()
@@ -188,9 +185,8 @@ def start_game():                                                 # game restart
     event6 = input()
     while event6 not in ["m", "M"]:
         if event6 == "h":
-            print(
-                f"{Fore.YELLOW}Entering lowercase m could grant you better equipment. Entering uppercase M leaves "
-                f"you vulnerable as you rush towards the boat:\n", end="")
+            print(f"{Fore.YELLOW}Entering lowercase m could grant you better equipment. Entering uppercase M leaves "
+                  f"you vulnerable as you rush towards the boat:\n", end="")
             event6 = input()
         else:
             print(f"{Fore.RED}Please input one of the commands shown.\n", end="")
@@ -227,9 +223,8 @@ def start_game():                                                 # game restart
         event7 = input()
     else:
         if event7 == "P":
-            print(
-                "You managed to silently shoot the guard down with your suppressed pistol. You climb back down the "
-                "watchtower and manage to get to the boat")
+            print("You managed to silently shoot the guard down with your suppressed pistol. You climb back down the "
+                  "watchtower and manage to get to the boat")
             exp = exp + 10
             sleep(2.0)
             print("Congratulations, you have completed The Island Escape!\n"
@@ -237,9 +232,8 @@ def start_game():                                                 # game restart
             sleep(2.0)
             game_over()
         else:
-            print(
-                "You take out the guard from behind with a knife. You then manage to climb down from the watchtower "
-                "and get to the boat to escape")
+            print("You take out the guard from behind with a knife. You then manage to climb down from the watchtower "
+                  "and get to the boat to escape")
             exp = exp + 5
             sleep(2.0)
             print("Congratulations, you have completed The Island Escape!\n"
